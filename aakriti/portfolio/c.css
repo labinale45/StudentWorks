@@ -1,0 +1,76 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+.topic{
+    display: flex;
+    justify-content: center;
+    width:95%;
+    align-items: center;
+    padding:20px 50px;
+color: rgb(56, 5, 5);
+background-color: rgb(108, 170, 221);
+}
+.topic ul{
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    list-style-type: none;
+}
+.icons{
+    gap: 30px;
+    margin-left: auto;
+   display: flex;
+}
+.center{
+    text-align: center;
+    color: cornflowerblue;
+}
+.btn{
+    padding: 10px;
+    width:100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+.button{
+    width:100px;
+    height:30px;
+    border:2px dotted black;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:20px;
+    padding: 5px;
+}
+.img{
+    background:linear-gradient(45deg,rgb(109, 171, 222,.5),rgba(48, 68, 85, 0.9));
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ justify-content: center;
+ grid-gap: 30px;
+ align-items: center;
+ padding: 50px 0px 50px 110px;
+
+
+}
+.hi{
+    height: 100%;
+    padding-right:10%;
+}
+.pic{
+    padding-left:10%;
+    display: flex;
+    gap:300px;
+}
+.la{
+    display: flex;
+    justify-content: end;
+    color: darkred;
+}

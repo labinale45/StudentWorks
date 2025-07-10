@@ -1,0 +1,915 @@
+*{
+  margin-top: 0;
+  scroll-behavior: smooth;
+}
+.web a{
+  color: #fff;
+}
+body{
+    background-color: black;
+    color:white;
+}
+.pro{
+  position:sticky;
+  top: 0;
+  z-index: 1;
+  padding: 20px;
+  display: flex;
+}
+.port{
+    /* background-image: url(road.jpg); */
+    width:100%;
+    height:100vh;
+    background: linear-gradient(180deg, rgba(65, 61, 61, .7), rgba(0,0,0,.9)),url("road.jpg");
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+
+.alison{
+  font-size: 25px;
+   margin-right: auto;
+}
+.web{
+    display: flex;
+    gap: 40px;
+    justify-content: end;
+    margin-right: 80px;
+}
+.develop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+}
+.scroll{
+    position:absolute;
+    top:480px;
+    rotate: 90deg;
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    0%{
+      transform: translateX(-10px);  
+    }
+    25%{
+        transform: translateX(5px);  
+    }
+    50%{
+       transform: translateX(20px);
+    }
+    75%{
+        transform: translateX(10px);  
+    }
+    100%{
+transform: translateX(-10px);  
+    }
+    
+}
+.UX{
+ position: absolute;
+ top:210px
+}
+.create{
+    position: absolute;
+    top: 220px;
+    font-size: 30px;
+    box-sizing: content-box;
+    overflow: hidden;
+    width: 350PX;
+    height: 100PX;
+    text-align: center;
+    display: flex;
+    gap: 20PX;
+
+}
+.create H1{
+  animation-name: Side-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+@keyframes Side-animation {
+   0% { transform: translateX(0); }
+            12% { transform: translateX(0); }
+            
+            16% { transform: translateX(-350px); }
+            28% { transform: translateX(-350px); }
+            
+            32% { transform: translateX(-700px); }
+            44% { transform: translateX(-700px); }
+            
+            48% { transform: translateX(-1050px); }
+            60% { transform: translateX(-1050px); }
+            
+            64% { transform: translateX(-1400px); }
+            76% { transform: translateX(-1400px); }
+            
+            80% { transform: translateX(-1750px); }
+            92% { transform: translateX(-1750px); }
+            
+            96% { transform: translateX(0); }
+            100% { transform: translateX(0); }
+}
+.design{
+ position: absolute;
+ top: 300px;
+ font-size: 20px;   
+}
+.icon{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 350px;
+}
+
+.about{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.div{
+ display: flex;
+ flex-direction: column;
+ width: 50%;
+ text-wrap: wrap;
+ gap:20px; 
+ align-items: center;
+ justify-content: center;
+ padding: 0 30px;
+
+}
+.out{
+    font-size:25px;
+    font-family:fantasy;
+}
+.us{
+    width: 100%;
+    font-size: 15px;
+    opacity: .5;
+}
+.see{
+  font-size: 15px;  
+  opacity: .5;
+}
+.your{
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid whitesmoke ;
+    background-color:#ff4c4c ;
+    width: 150px;
+    height: 40px;
+}
+.your:hover{
+  font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #ff4c4c;
+    background-color:whitesmoke ;
+    width: 150px;
+    height: 40px;
+    color: #000;
+}
+.pp{
+   width: 50%;
+   height: auto;
+}
+.pic img{
+    width: 100%;
+    height: auto;
+}
+.dream{
+    position: relative;
+    /* background-image: url(laptop.jpg); */
+    width:100%;
+    height:100vh;
+    background: linear-gradient(180deg, rgba(65, 61, 61, .7), rgba(0,0,0,.9)),url("laptop.jpg");
+    background-size: cover;
+    background-repeat:no-repeat ;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.service{
+        font-size:25px;
+    font-family:fantasy;
+    margin-left:90px ;
+}
+.thing{
+    font-size: 15px;
+    opacity: .5;
+    margin-left: 90px;
+}
+.book{
+    position: relative;
+    background-color: black;
+    opacity: .5;
+    width: 50%;
+    height: auto;
+}
+.inter{
+position: absolute;
+bottom: 220px;
+}
+.fac{
+    position: absolute;
+     font-size:20px;
+    font-family:fantasy;
+    bottom: 180px;
+}
+.lorem{
+    position: absolute;
+    bottom: 130px;
+}
+.themes{
+    position: relative;
+    background-color: black;
+    opacity: .5;
+    width: 50%;
+    height: auto;
+}
+.industry{
+position: absolute;
+bottom: 220px;
+}
+.pen{
+    position: absolute;
+     font-size:20px;
+    font-family:fantasy;
+    bottom: 180px;
+}
+.simply{
+    position: absolute;
+    bottom: 130px;
+}
+.themes{
+    position: relative;
+    background-color: black;
+    opacity: .5;
+    width: 50%;
+    height: auto;
+}
+.industry{
+position: absolute;
+bottom: 220px;
+}
+.pen{
+    position: absolute;
+     font-size:20px;
+    font-family:fantasy;
+    bottom: 180px;
+}
+.simply{
+    position: absolute;
+    bottom: 130px;
+}
+.themes{
+    position: relative;
+    background-color: black;
+    opacity: .5;
+    width: 50%;
+    height: auto;
+}
+.industry{
+position: absolute;
+bottom: 220px;
+}
+.pen{
+    position: absolute;
+     font-size:20px;
+    font-family:fantasy;
+    bottom: 180px;
+}
+.simply{
+    position: absolute;
+    bottom: 130px;
+}
+.content{
+    position: relative;
+    background-color: black;
+    opacity: .5;
+    width: 50%;
+    height: auto;
+}
+.market{
+position: absolute;
+bottom: 220px;
+}
+.dummy{
+    position: absolute;
+     font-size:20px;
+    font-family:fantasy;
+    bottom: 180px;
+}
+.more{
+    position: absolute;
+    bottom: 130px;
+}
+.apps{
+    position: relative;
+    background-color: black;
+    opacity: .5;
+    width: 50%;
+    height: auto;
+}
+.mobile{
+position: absolute;
+bottom: 220px;
+}
+.phone{
+    position: absolute;
+     font-size:20px;
+    font-family:fantasy;
+    bottom: 180px;
+}
+.tele{
+    position: absolute;
+    bottom: 130px;
+}
+.we{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.man{
+ display: flex;
+ flex-direction: column;
+ width: 50%;
+ gap:20px; 
+ align-items: center;
+ justify-content: center;
+ padding: 20px 30px;
+
+}
+.all{
+    font-size:25px;
+    font-family:fantasy;
+}
+.us{
+    width: 100%;
+    font-size: 15px;
+    opacity: .5;
+}
+.our{
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid whitesmoke ;
+    background-color:#ff4c4c ;
+    width: 150px;
+    height: 40px;
+}
+.our:hover{
+  font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #ff4c4c;
+    background-color:whitesmoke ;
+    width: 150px;
+    height: 40px;
+    color: #000;
+}
+.box{
+    position: relative;
+    /* background-image: url(car1.jpg); */
+    width:100%;
+    height:100vh;
+    background: linear-gradient(180deg, rgba(65, 61, 61, .7), rgba(0,0,0,.9)),url("car1.jpg");
+    background-size: cover;
+    background-repeat:no-repeat ;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+.in{
+    position:absolute;
+    background-color: gray;
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    left: 50px;
+    top: 50px;
+}
+.face{
+    position: relative;
+    background-color: burlywood;
+    width:150px;
+    height: 180px;
+    border-radius: 50px 50px 90px 90px;
+}
+.eye{
+  display: flex;
+  position: absolute;
+  gap: 50px;
+  left: 30px;
+  
+}
+.eye1{
+  width: 20px;
+  height: 40px;
+  background-color: antiquewhite;
+  margin-top: 30%;
+  animation-name:e ;
+  animation-duration: 5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.eye2{
+  width: 20px;
+  height: 40px;
+  background-color: antiquewhite;
+  margin-top: 30%;
+  animation-name:e ;
+  animation-duration: 5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.nose{
+background-color: chocolate;
+width: 20px;
+height: 40px;
+position: absolute;
+right:65px;
+bottom: 60px;
+border-radius: 0px 0px 10px 10px ;
+ animation-name:n;
+  animation-duration: 5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.mouth{
+  position: absolute;
+  background-color: rgb(192, 149, 93);
+  width: 50px;
+  height: 20px;
+  right: 50px;
+  bottom: 30px;
+  border-radius: 50px;
+  animation-name:m;
+  animation-duration:5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+ 
+}
+.water{
+  position:absolute;
+  width: 10px;
+  height: 20px;
+  background-color:#5caafc;
+  right: 60px;
+  bottom: 50px; 
+  z-index: 1;
+  border-radius: 100px 100px 50px 50px;
+  animation-name:w;
+  animation-duration: 5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.p1{
+  position: absolute;
+  background-color:black;
+  width:10px;
+  height: 15px;
+  right: 75px;
+  bottom:15px;
+  border-radius: 20px;
+  animation-name:p ;
+  animation-duration: 5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.p2{
+  position: absolute;
+  background-color:black;
+  width:10px;
+  height: 15px;
+  left: 75px;
+  bottom:15px;
+  border-radius: 20px;
+  animation-name:p ;
+  animation-duration: 5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.head{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 150px;
+}
+.site{
+    position:absolute;
+    background-color: gray;
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    right: 10px;
+    top: 50px;
+}
+.speed{
+    position:absolute;
+    background-color: gray;
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    right: 475px;
+    top: 0px;
+    
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px 150px;
+  background-color: #f3f7fe;
+  color: #3b82f6;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
+}
+
+@keyframes e {
+  0%{
+
+  }
+  50%{
+    background-color: black;
+    width: 20px;
+    height: 10px;
+  }
+  100%{
+    background-color: #725c48
+  }
+  
+}
+@keyframes p{
+  0%{
+
+  }
+  50%{
+    background-color:burlywood;
+    width: 20px;
+    height: 10px;
+  }
+  100%{
+    background-color: #725c48
+  }
+  
+}
+@keyframes n {
+  0%{
+
+  }
+  50%{
+    width:15px;
+    height: 15px;
+  }
+  
+}
+@keyframes m {
+  0%{
+
+  }
+  50%{
+    width: 20px;
+    height: 20px;
+  }
+}
+@keyframes w 
+{
+  0%{
+
+  }
+  50%{
+    width: 4px;
+    height: 2px;
+    background-color: burlywood;
+  }
+  100%{
+    background-color: #5caafc;
+  }
+}@keyframes drop {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.lava-lamp {
+  position: relative;
+  width: 50px;
+  height: 100px;
+  background: #000;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #e64980, #ff8787);
+  border-radius: 50%;
+  left: 15px;
+  animation: drop 5s ease-in-out infinite;
+}
+.bubble1 {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #82c91e, #3bc9db);
+  border-radius: 50%;
+  left: 1px;
+  animation: drop 3s ease-in-out infinite;
+}
+.bubble2 {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #7950f2, #f783ac);
+  border-radius: 50%;
+  left: 30px;
+  animation: drop 4s ease-in-out infinite;
+}
+.bubble3 {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #4481eb, #04befe);
+  border-radius: 50%;
+  left: 20px;
+  animation: drop 6s ease-in-out infinite;
+}
+.load{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin-top: 150px;
+}
+.ab{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.di{
+ display: flex;
+ flex-direction: column;
+ width: 50%;
+ gap:20px; 
+ align-items: center;
+ justify-content: center;
+ padding: 0 30px;
+
+}
+.u{
+    width: 100%;
+    font-size: 25px;
+    font-family: fantasy;
+
+}
+.ur{
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid whitesmoke ;
+    background-color:#ff4c4c ;
+    width: 150px;
+    height: 40px;
+}
+.ur:hover{
+  font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #ff4c4c;
+    background-color:whitesmoke ;
+    width: 150px;
+    height: 40px;
+    color: #000;
+}
+.flex{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-top:60px;
+    margin-left:350px ;
+}
+@media(max-width:750px){
+  .alison{
+    margin-left:80px ;
+    margin-top: 30px;
+    font-size: 50px;
+}
+.web{
+    display: flex;
+    gap: 40px;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 80px;
+}
+.in{
+    position:absolute;
+    background-color: gray;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    left: 50px;
+    top: 50px;
+}
+.site{
+    position:absolute;
+    background-color: gray;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    right: 10px;
+    top: 50px;
+}
+.speed{
+    position:absolute;
+    background-color: gray;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    left:-220px;
+    top: -2px;
+    
+}
+.load{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin-top: 50px;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 50px;
+  background-color: #f3f7fe;
+  color: #3b82f6;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  transition: 0.3s;
+}
+
+.face{
+    position: relative;
+    background-color: burlywood;
+    width:150px;
+    height: 180px;
+    border-radius: 50px 50px 90px 90px;
+}
+.eye{
+  display: flex;
+  position: absolute;
+  gap: 50px;
+  left: 30px;
+  
+}
+.eye1{
+  width: 20px;
+  height: 40px;
+  background-color: antiquewhite;
+  margin-top: 30%;
+  animation-name:e ;
+  animation-duration: 5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.eye2{
+  width: 20px;
+  height: 40px;
+  background-color: antiquewhite;
+  margin-top: 30%;
+  animation-name:e ;
+  animation-duration: 5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.nose{
+background-color: chocolate;
+width: 20px;
+height: 40px;
+position: absolute;
+right:65px;
+bottom: 60px;
+border-radius: 0px 0px 10px 10px ;
+ animation-name:n;
+  animation-duration: 5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.mouth{
+  position: absolute;
+  background-color: rgb(192, 149, 93);
+  width: 50px;
+  height: 20px;
+  right: 50px;
+  bottom: 30px;
+  border-radius: 50px;
+  animation-name:m;
+  animation-duration:5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+ 
+}
+.water{
+  position:absolute;
+  width: 10px;
+  height: 20px;
+  background-color:#5caafc;
+  right: 60px;
+  bottom: 50px; 
+  z-index: 1;
+  border-radius: 100px 100px 50px 50px;
+  animation-name:w;
+  animation-duration: 5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.p1{
+  position: absolute;
+  background-color:black;
+  width:10px;
+  height: 15px;
+  right: 75px;
+  bottom:15px;
+  border-radius: 20px;
+  animation-name:p ;
+  animation-duration: 5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.p2{
+  position: absolute;
+  background-color:black;
+  width:10px;
+  height: 15px;
+  left: 75px;
+  bottom:15px;
+  border-radius: 20px;
+  animation-name:p ;
+  animation-duration: 5s;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.head{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 15px;
+}
+}
+
+          

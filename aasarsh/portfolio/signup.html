@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signin.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="login-container">
+    <h2><b>Create Account</b></h2>
+    <form id="signupForm" action="testfolio.html">
+      <div class="input-box">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Full Name" required>
+      </div>
+      <div class="input-box">
+        <i class="fas fa-calendar"></i>
+        <input type="date" placeholder="Date of Birth" required>
+      </div>
+      <div class="input-box">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email" required>
+      </div>
+      <div class="input-box">
+        <i class="fas fa-lock"></i>
+        <input id="password" type="password" placeholder="Password" required>
+      </div>
+      <div class="input-box">
+        <i class="fas fa-lock"></i>
+        <input id="confirmPassword" type="password" placeholder="Confirm Password" required>
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn">Sign Up</button>
+      </div>
+      <div class="link-row">
+        <a href="signin.html">Already have an account? Sign In</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+      
+      if (password !== confirmPassword) {
+        e.preventDefault();
+        alert('Passwords do not match!');
+      }
+    });
+  </script>
+</body>
+</html>

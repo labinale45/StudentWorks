@@ -1,0 +1,268 @@
+body{
+    background-image: url(ocean.jpg);
+    background-size: cover;
+}
+ .main{
+    background-image: url(roshan.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200%;
+    margin-top: -30px;
+    border: 4px solid rgb(34, 0, 255);
+   
+ 
+}
+.navbar{
+    margin-top: -18;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    width: 98.9%; 
+    color: blue;
+   background-color: antiquewhite;
+   margin-left: -120px;
+   padding: 10px;
+   z-index: 1;
+ 
+}
+nav{
+    width: 80%;
+    padding: 10px 100px;
+    height: auto;
+    
+}
+.gleam{
+    font-size: 35px;
+    margin-right: 65%;
+}
+.box{
+    position: absolute;
+    top:90%;
+    left: 45%;
+    animation: RER 2s alternate infinite;
+    transition: 1s ease-in-out;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes RER {
+    0%{
+    
+color: blueviolet;
+
+    }
+    50%{
+color: aqua;
+    }
+    100%{
+color: chartreuse;
+    }
+    
+}
+.NAME{
+    font-size: 37px;
+       animation: RERD 2s alternate infinite;
+    transition: 1s ease-in-out;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes RERD {
+    0%{
+color: rgb(255, 255, 255);
+    }
+    50%{
+color: rgb(157, 250, 250);
+    }
+    100%{
+color: rgb(255, 87, 233);
+    }
+
+}
+.line{
+    margin-right: 30px;
+    color: aquamarine;
+}
+.oval{
+display: flex;
+justify-content: center;
+align-items:center;
+margin-top: 80px;
+border-radius: 10%;
+background-color: aqua;
+width:80px;
+height: 30px;
+margin-left: 120px;
+}
+.about{
+    position: relative;
+    margin: 10%;
+}
+.hello{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 60px;
+       color: rgb(0, 255, 255);
+}
+.hi{
+     display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 30px;
+    color: rgb(98, 0, 255);
+}
+.portfolio{
+
+}
+.image{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin: 10%;
+    border: 7px solid rgb(0, 255, 110);
+    padding: 10%;
+    position: relative;
+    background-image: url(nion.jpg);
+background-size: cover;
+
+}
+.i1{
+width: 255px;
+height: 300px;
+border: 4px solid rgb(0, 255, 221);
+background-image: url(1.jpg);
+background-size: cover;
+position: absolute;
+left: 20px;
+top: 30px;
+
+}
+.i2{
+width: 255px;
+height: 300px;
+border: 4px solid rgb(0, 255, 221);
+background-image: url(2.jpg);
+background-size: cover;
+}
+.i3{
+width: 255px;
+height: 300px;
+border: 4px solid rgb(0, 255, 221);
+background-image: url(3.jpg);
+background-size: cover;
+position: absolute;
+right: 20px;
+bottom: 30px;
+}
+.i4{
+width: 255px;
+height: 300px;
+border: 4px solid rgb(0, 255, 221);
+background-image: url(4.jpg);
+background-size: cover;
+}
+.i5{
+width: 255px;
+height: 300px;
+border: 4px solid rgb(0, 255, 221);
+background-image: url(5.jpg);
+background-size: cover;
+position: absolute;
+right: 20px;
+top: 30px;
+}
+.i6{
+width: 255px;
+height: 300px;
+background-image: url(6.jpg);
+background-size: cover;
+border: 4px solid rgb(0, 255, 221);
+}
+.i7{
+width: 255px;
+height: 300px;
+border: 4px solid rgb(0, 255, 221);
+background-image: url(7.jpg);
+background-size: cover;
+position: absolute;
+left: 20px;
+bottom: 30px;
+}
+.i8{
+width: 255px;
+height: 300px;
+border: 4px solid rgb(0, 255, 221);
+background-image: url(8.jpg);
+background-size: cover;
+}
+.i9{
+width: 240px;
+height: 300px;
+border: 4px solid rgb(0, 255, 221);
+background-image: url(MOON.jpg);
+background-size: cover;
+position: absolute;
+}
+.newbox{
+   
+    width: 80%;
+    height: 40%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-left: 10%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0RrvdVmd4OYLQpB5AlAsrgmeOeNGQPDmRy3abUrF6nDmf3jY5KI2gZPA&s);
+    background-size: cover;
+    position: relative;
+    border-radius: 5%;
+    border: 4px solid rebeccapurple;
+
+}
+.quoter{
+    position: absolute;
+    top: 200px;
+    font-size: 60px;
+        animation: FIRE 1s alternate infinite;
+    transition: 1s ease-in-out;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes FIRE {
+    0%{
+color: rgb(255, 196, 0);
+    }
+    50%{
+color: rgb(255, 187, 0);
+    }
+    100%{
+color: rgb(255, 72, 0);
+    }
+
+}
+.quote{
+    font-size: 30px;
+        animation: FIRE2 1s alternate infinite;
+    transition: 1s ease-in-out;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes FIRE2 {
+    0%{
+color: rgb(255, 72, 0);
+    }
+    50%{
+color: rgb(255, 187, 0);
+    }
+    100%{
+color: rgb(255, 196, 0);
+    }
+
+}

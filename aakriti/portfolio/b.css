@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.god{
+    display:flex;
+    justify-content: center;
+    width:95%;
+    align-items: center;
+    padding:0px 10px;
+    background-color: rgb(53, 110, 148);
+    color: rgb(241, 233, 233);
+    padding: 20px 50px;
+}
+
+.god ul{
+    margin-left: auto;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+
+}
+.trust{
+    margin-left: auto;
+    display: flex;
+    gap:20px;
+    list-style-type: none;
+}
+.s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    color: rgb(98, 72, 168);
+}
+.r{
+    color: darkred;
+    text-align: center;
+    font-size: larger;
+    font-family: cursive;
+}
+.contact{
+    display: flex;
+    gap:20px;
+}
+.map{
+    width:50%;
+}
+form{
+    width:50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap:30px;
+
+}
+form input{
+    border:2px dotted grey;
+    border-radius:20px;
+    height:50px;
+}
+.sub{
+    grid-column-start:1;
+    grid-column-end: 3;
+
+    grid-row-start: 2;
+}
+.msg{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+.sm{
+    color:white;
+    border:solid 3px;
+    border-color: white;
+    padding:6px 14px ;
+    background-color:black;
+}
+.w{
+    color: darkred;
+    display: flex;
+    justify-content: end;
+}

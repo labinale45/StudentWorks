@@ -1,0 +1,87 @@
+body{
+    background: linear-gradient(rgb(0, 0, 0),rgb(43, 40, 40));
+}
+.login{
+    display: none;
+    height:auto;
+    width: 40%;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    transition: .7s;
+    background:linear-gradient(#2e2e2e, #212121) padding-box, linear-gradient(140deg, transparent 25%, #D3A121,  #FAF4E4) border-box;
+}
+.login:hover{
+    margin-bottom: 60px;
+    box-shadow: 20px 20px 10px rgb(114, 114, 114);
+}
+.loginbtn{
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+a{
+    text-decoration: none;
+}
+form{
+    padding-top: 30px;
+}
+.jaw{
+    margin-top: 40px;
+    height: 40px;
+    width: 80%;
+    margin-left: 50px;
+    border:none;
+    background-color: #04aa6d;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.nav{
+    display: flex;
+}
+.nav ul{
+    display: flex;
+    gap:30px;
+    list-style-type: none;
+}
+.loginbtn{
+    margin-left: auto;
+}
+.jaw:hover{
+    background-color: #49d8a4;
+}
+img{
+    height: 100px;
+    width: 100px;
+    display: flex ;
+    justify-self: center;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+input:focus {
+    border: none;
+}
+input{
+    color: white;
+    height: 50px;
+    width: 80%;
+    margin-left: 50px;
+    background-color: black;
+    border: 5px solid inset;
+    border-radius: 20px;
+}
+label{
+    margin-left: 50px;
+}
+h4{
+    padding-left: 65%;
+}
+p{
+    padding-left: 30%;
+}
+.base{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

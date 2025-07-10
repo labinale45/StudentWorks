@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biophos</title>
+    <link rel="stylesheet" href="testfolio.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="mainflask.svg" type="image/png" />
+  </head>
+  <body>
+   
+    <div id="welcome-screen" class="welcome-screen">
+      <div class="welcome-content">
+        <h1 class="animated-gradient-text">Welcome, People</h1>
+        <p class="fade-in-text">Hope You like it 🗿</p>
+      </div>
+
+      <div class="tv-shutdown" id="tv-shutdown"></div>
+    </div>
+
+    <header>
+      <div class="nav-container">
+        <div class="logo><i class="fas fa-flask"></i><a href="/">Biophos</a></div>
+        <nav class="menu">
+          <a href="#about"><i class="fas fa-user-circle fa-bounce"></i>About</a>
+          <a href="#projects"
+            ><i class="fas fa-briefcase fa-shake"></i> Projects</a
+          >
+          <a href="#my-works"
+            ><i class="fas fa-laptop-code fa-fade"></i>My Works</a
+          >
+          <a href="#contact"
+            ><i class="fas fa-paper-plane fa-beat"></i>Contact Me</a
+          >
+          <a href="signin.html"
+            ><i class="fas fa-sign-in-alt fa-bounce"></i>Switch User</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Hi, I'm Adarsh</h1>
+      <h1>😀</h1>
+      <h2>A HTML & CSS learner</h2>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p class="typing">
+        I began learning HTML and CSS a month ago. I enjoy making interactive
+        and colorful websites using animations.
+      </p>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="project-card">
+          <img src="responsive-website.jpg" alt="Landing Page Project" />
+          <h3>Landing Page</h3>
+          <p>A responsive page using flexbox and gradients.</p>
+        </div>
+        <div class="project-card">
+          <img
+            src="responsive-image-grid-with-hover-effects.png.png"
+            alt="Image Gallery Project"
+          />
+          <h3>Image Gallery</h3>
+          <p>CSS Grid gallery with hover effects.</p>
+        </div>
+        <div class="project-card">
+          <img src="log.jpg" alt="Login Form Project" />
+          <h3>Login Form</h3>
+          <p>Modern login form using shadows and radius.</p>
+        </div>
+        <div class="project-card">
+          <img src="404.png" alt="404 Page Project" />
+          <h3>404 Page</h3>
+          <p>Animated error page with bouncing emoji.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-works" id="my-works">
+      <h2>My Works</h2>
+      <div class="grid">
+        <div class="work-card">
+          <h3>Loading Bar</h3>
+          <div class="loading-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <h3>Dropdown Hamburger</h3>
+          <div class="hamburger-container">
+            <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+              <span class="bar top"></span>
+              <span class="bar middle"></span>
+              <span class="bar bottom"></span>
+            </div>
+            <div id="dropdown-menu" class="dropdown hidden">
+              <a href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <h3>Button</h3>
+          <button class="red-bounce-btn" onclick="bounceButton(this)">
+            <span id="click-count">0</span>
+          </button>
+        </div>
+        <div class="work-card">
+          <h3>Toggle Switch</h3>
+          <label class="switch">
+            <input type="checkbox" id="toggleSwitch" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="Jeffery Donalds " />
+        <label>Email</label>
+        <input type="email" placeholder="youremail@example.com" required />
+        <label>Message</label>
+        <textarea rows="4" placeholder="Give some feedbacks!"></textarea>
+        <button class="send-btn" type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        Who art Thou'?
+        <b style="font-weight: 900; font-size: large">-<u>Adarsh</u></b>
+      </p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("dropdown-menu");
+        const icon = document.getElementById("hamburger");
+        menu.classList.toggle("hidden");
+        icon.classList.toggle("open");
+      }
+
+      let clickCount = 0;
+      function bounceButton(button) {
+        clickCount++;
+        document.getElementById("click-count").textContent = clickCount;
+        button.style.transform = "translateY(6px)";
+        setTimeout(() => {
+          button.style.transform = "translateY(0)";
+        }, 150);
+      }
+
+      window.addEventListener("load", function () {
+        setTimeout(() => {
+          welcome.style.transition = "opacity 0.5s ease-out";
+          welcome.style.opacity = "0";
+
+          setTimeout(() => {
+            welcome.style.display = "none";
+
+            welcome.style.transition = "";
+            welcome.style.opacity = "";
+          }, 500);
+        }, 2500);
+      });
+ 
+      document.addEventListener("DOMContentLoaded", () => {
+        const welcome = document.getElementById("welcome-screen");
+        const shutdown = document.getElementById("tv-shutdown");
+
+       
+
+        setTimeout(() => {
+          welcome.classList.add("flicker");
+          shutdown.style.opacity = "100";
+
+          setTimeout(() => {
+            welcome.style.opacity = "0";
+
+            setTimeout(() => {
+              welcome.remove();
+            }, 500);
+          }, 100);
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

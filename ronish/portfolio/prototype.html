@@ -1,0 +1,27 @@
+<html>
+<head>
+  
+  <title>Search Bar Redirect</title>
+ <link href="protocss.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Enter name..." />
+    <button onclick="searchPage()">Search</button>
+  </div>
+
+  <script>
+    function searchPage() {
+      var input = document.getElementById('searchInput').value.trim();
+      if (input) {
+        var url = input.toLowerCase() + '.html';
+        window.location.href = url;
+      } else {
+        alert('Please enter a name.');
+      }
+    }
+  </script>
+
+</body>
+</html>

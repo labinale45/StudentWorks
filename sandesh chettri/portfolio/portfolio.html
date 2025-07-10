@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title PORTFOLIO></title>
+        <link rel="stylesheet" href="portfolio.css"> 
+                    <script src="https://kit.fontawesome.com/d7869568b4.js"crossorigin="anonymous"></script>
+
+    </head>
+    <nav>
+            <div style="color:aliceblue" class="logo"><a href="/"><img src="twitter-new-x-logo-design-vector_1340851-70.avif" width="20px"height="20px"> </a> </div>
+            <ul>
+                <li style="color: aliceblue;">HOME</li>
+                <li style="color:aliceblue">STORIES</li>
+                <li style="color:aliceblue">WORKS</li>
+                <li style="color: aliceblue;">PAGES</li>
+                <li style="color: aliceblue;">CONTACT</li>
+                <li style="color:aliceblue">SHOP</li>
+
+
+            </ul>
+
+        <div style="color:aliceblue" class="search">
+            search
+        </div>
+    
+    </nav>
+    <div class="main-box">
+    <div class="content">
+    <span style="color:aliceblue">OUR VISION</span><br><br><h1 style="color:aliceblue; font-size:50px;">DESIGN</h1>
+    <br style="color:aliceblue"><br><P style="color:aliceblue">
+    Credibly leverage existing business experiences through
+    Magnetic mindshare . Synergistically exploit efficient
+    partnership world-class applications<br>
+
+    Take A Look<br>
+    </P>
+    <button  type="button" onclick="left()" style="margin-top: 6px;" class="signl sign"><i class="fa-solid fa-arrow-left fa-lg"></i></button>
+        <button type="button" onclick="right()"  style="margin-top: 6px;" class="signr sign"><i class="fa-solid fa-arrow-left fa-lg"></i></button>
+
+    </div>
+    </div>
+    <div class="replay">
+        <span style="color:aliceblue">INSPIRATION</span><br><br><h1 style="color:aliceblue; font-size:50px;">MOTION</h1>
+        <br style="color:aliceblue"><br><p style="color:aliceblue">
+        Convinently formulate progressive users for error-free<br>
+        interfaces.Monotonectally deploy superior<br>
+        relationship without seamless infomadiaris.<br>
+        </p>
+            </div>
+        <div class="class">
+            <span style="color: aliceblue; font-size: 50px;">ENGINE</span>
+            <br style="color:aliceblue"><br><p style="color:aliceblue">
+        Authoratively mest robut web services and web-enabled ROI.
+        Globally communicate extentisive e-services
+        rather than backend users.<br>
+
+        TAKE A LOOK<br>  </p>
+
+
+        </div>
+
+<script>
+    function right() {
+        const rdivs = document.getElementsByClassName('class');
+        for (let i = 0; i < rdivs.length; i++) {
+            const rdiv = rdivs[i];
+            if (rdiv.style.display === 'none' || rdiv.style.display === '') {
+                rdiv.style.display = 'block';
+            } else {
+                rdiv.style.display = 'none';
+            }
+        }
+    }
+        function left() {
+        const rdivs = document.getElementsByClassName('replay');
+        for (let i = 0; i < rdivs.length; i++) {
+            const rdiv = rdivs[i];
+            if (rdiv.style.display === 'none' || rdiv.style.display === '') {
+                rdiv.style.display = 'block';
+            } else {
+                rdiv.style.display = 'none';
+            }
+        }
+    }
+</script>
+
+
+
+
+
+</html>

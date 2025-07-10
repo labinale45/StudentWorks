@@ -1,0 +1,64 @@
+*{
+    margin:0;
+}
+
+body{
+  
+    background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0.5)),url("Antony.png_1662305922430.png");
+      background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0,30px;
+}
+
+nav{
+    height: 50px;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 3px 20px;
+     font-size: 12px;
+    margin: 20px 40px;
+}
+.logo{
+    margin-right: auto;
+}
+.search{
+    margin-left: auto;
+}
+
+nav ul{
+    display: flex;
+    list-style-type:none;
+    gap: 40px;
+    font-size: 12px;
+
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.serch{
+    margin-left: auto;
+    
+}
+
+.milche{
+    background:  linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0.5)),url(bb.jpg);
+    background-repeat: no-repeat;
+    display: none;
+    width: 100%;
+
+}
+
+.dafa{
+    
+    background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0.5)),url(p.jpg);
+    background-repeat: no-repeat;
+    display: none;
+width:100%;
+}
+
