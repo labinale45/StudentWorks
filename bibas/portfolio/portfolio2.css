@@ -1,0 +1,433 @@
+body{
+    background-image: url(bibas.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.header{
+    color:rgb(154, 14, 14);
+    font-size: 30px;
+    margin-left: 100px;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+}
+.poop{
+    margin-top: 200px;
+}
+.about{
+  width: 200px;
+  height: 50px;
+  background-color: #00c0ff;
+  border-radius: 20px;
+  margin-left: 100px;
+  font-size: larger;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.logo{
+    font-size: 30px;
+    color:rgb(222, 6, 6);
+    margin-left: 50px;
+    margin-top: 60px;
+}
+.gu{
+    font-size: 25px;
+display: flex;
+justify-content: end;
+width: auto;
+height:40px;
+list-style-type: none;
+gap:20px;
+color:black;
+}
+.profile{
+    width: 340px;
+    height: 340px;
+    background-color: #00c0fe;
+    border-radius: 50%;
+  position: absolute;
+  top: 180px;
+  right: 200px;
+ z-index: -1;
+ background-image: url(bibash.png);
+}
+.profile img {
+    position: absolute;
+}
+.achi{
+    width:300px;
+    height: 400px;
+    background-color: #3a2b71;
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-top: 200px;
+    background: linear-gradient(#11080c,#170a15)padding-box, linear-gradient(0deg,transparent 35%,#310377)border-box;
+    border: 2px solid transparent;
+}
+.achi i{
+    position: absolute;
+    left:170px;
+    top:860px;
+}
+.achi h1{
+    position: absolute;
+    left: 180px;
+    top:950px;
+    color:white;
+}
+.achi p{
+    position: absolute;
+    left:180px;
+    top:1030px;
+    color:#a29cba;
+    font-size: 20px;
+
+}
+.achi span{
+    position: absolute;
+    left:180px;
+    top:1150px;
+    font-size: 20px;
+    color:#a29cba;
+}
+.raju{
+    width:300px;
+    height: 400px;
+    background-color: #3a2b71;
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-top: 200px;
+    background: linear-gradient(#11080c,#170a15)padding-box, linear-gradient(0deg,transparent 35%,#310377)border-box;
+    border: 2px solid transparent;
+}
+#hoo{
+    display: flex;
+}
+.raju i{
+    position: absolute;
+    left:640px;
+    top:860px;
+}
+.raju h1{
+    position: absolute;
+    left:640px;
+    top:950px;
+    color:white;
+}
+.raju p{
+    position: absolute;
+    left: 640px;
+    top:1030px;
+    font-size: 20px;
+    color:#a29cba;
+}
+.raju span{
+    position: absolute;
+    left:640px;
+    top:1150px;
+    color:#a29cba;
+    font-size: 20px;
+}
+.guu{
+     width:300px;
+    height: 400px;
+    background-color: #3a2b71;
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-top: 200px;
+    background: linear-gradient(#11080c,#170a15)padding-box, linear-gradient(0deg,transparent 35%,#310377)border-box;
+    border: 2px solid transparent;
+}
+.guu i{
+    position: absolute;
+    left:1080px;
+    top:860px;
+}
+.guu h1{
+    position: absolute;
+    left:1080px;
+    top:950px;
+    color: white;
+}
+.guu p{
+    position: absolute;
+    left:1080px;
+    top:1030px; 
+    color:#a29cba;
+    font-size: 20px;
+}
+.guu span{
+    position: absolute;
+    left:1080px;
+    top:1150px;
+    color:#a29cba;
+    font-size: 20px;
+}
+#aboutus{
+    display:flex;
+    margin-top: 210px;
+    justify-content: center;
+}
+#aboutus h1{
+    font-size:45px;
+    color: #350147;
+    margin-left: 30px;
+    color:rgb(191, 127, 127);
+}
+#aboutus p{
+    font-size: 50px;
+    position: absolute;
+    top: 1500px;
+    color: rgb(58, 6, 6);
+}
+#aboutus .jaw{
+     position: absolute;
+    top: 1550px;   
+    color:pink;
+}
+.image{
+    width:100%;
+    height:100%;
+}
+.image img{
+    height: 400px;
+width: 350px;
+position: absolute;
+top: 1800px;
+left: 200px;
+}
+.kaju{
+    font-size: 60px;
+    left:560px;
+    width: 300px;
+    position: relative;
+    top: 220px;
+    color:rgb(83, 0, 0);
+}
+.image p{
+    position: relative;
+    top: 240px;
+    width:700px;
+    left: 600px;
+    font-size: 50px;
+    color: rgb(49, 23, 23);
+}
+#services h1{
+    position: relative;
+    font-size: 70px;
+    color:rgb(135, 135, 18);
+    width: 40%;
+    left:500px;
+    top:420px;
+}
+.playout{
+    width:300px;
+    height: 400px;
+    background-color: #3a2b71;
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-top: 550px;
+    background: linear-gradient(#11080c,#170a15)padding-box, linear-gradient(0deg,transparent 35%,#310377)border-box;
+    border: 2px solid transparent;
+    position: relative;
+}
+.bot1 {
+  border: 15px solid rgb(173, 148, 148);
+  border-top: 15px solid rgb(123, 123, 255);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: spin 1.5s linear infinite;
+  margin: auto;
+  box-shadow: 0px 0px 5px 5px red;
+  position: absolute;
+  margin-top:100px ;
+  margin-left:60px ;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.playout2{
+     width:300px;
+    height: 400px;
+    background-color: #3a2b71;
+    border-radius: 20px;
+    margin-left: 580px;
+    margin-top: -405px;
+    background: linear-gradient(#11080c,#170a15)padding-box, linear-gradient(0deg,transparent 35%,#310377)border-box;
+    border: 2px solid transparent;
+    position: relative;
+}
+.bot2{
+    position: relative;
+    width:150px;
+    height:300px;
+    border-radius: 50px;
+    background-color:cornflowerblue;
+    margin: auto;
+    box-shadow: 0px 0px 10px 10px purple;
+    margin-top:50px ;
+}
+.bubble{
+    position: absolute;
+    top:0;
+    background-color: chartreuse;
+    width:50px;
+    height:50px;
+    left:50px;
+    border-radius: 50%;
+    animation: drop 5s ease-in-out infinite;
+    box-shadow: 0px 0px 3px 3px red;
+}
+.bubble1{
+    position: absolute;
+    top:0;
+    background-color:brown;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    left:30px;
+    animation: drop 3s ease-in-out infinite;
+    box-shadow: 0px 0px 3px 3px greenyellow;
+}
+
+.bubble2{
+    position: absolute;
+    top:0;
+    background-color:darkorchid;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    left:80px;
+    animation: drop 4.5s ease-in-out infinite;
+    box-shadow: 0px 0px 3px 3px yellow;
+}
+.bubble3{
+    position: absolute;
+    top:0;
+    background-color:lightcyan;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    left:40px;
+    animation: drop 6s ease-in-out infinite;
+    box-shadow: 0px 0px 3px 3px purple;
+}
+@keyframes drop{
+     0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(220px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.playout3{
+    width:300px;
+    height: 400px;
+    background-color: #3a2b71;
+    border-radius: 20px;
+    margin-left: 1000px;
+    margin-top: -405px;
+    background: linear-gradient(#11080c,#170a15)padding-box, linear-gradient(0deg,transparent 35%,#310377)border-box;
+    border: 2px solid transparent;
+    position: relative;
+}
+.bot3{
+    position: relative;
+    margin-left: 60px;
+   margin-top: 150px;
+    display: flex;
+}
+.eye{
+    width: 180px;
+    height: 100px;
+    position: absolute;
+     background:beige;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 10px brown;
+    border: 6px solid rgb(59, 38, 38);
+}
+.iris{
+    width:70px;
+    height: 70px;
+    background: black;
+    position: absolute;
+    border-radius: 50%;
+    animation: eyeball 6s ease-in-out infinite;
+}
+@keyframes eyeball{
+ 0%,
+  100% {
+    transform: translate(-2px,15px);
+  }
+  25% {
+    transform: translate(-10px,10px);
+  }
+  50% {
+    transform: translate(50px,10px);
+  }
+  80% {
+    transform:translate(50px,-15px) ;
+  }
+}
+#contact h1{
+    font-size: 60px;
+    color:brown;
+    align-items: center;
+    margin-left: 550px;
+    margin-top: 290px;
+}
+#info , th ,td{
+border: 1px solid black;    
+width:400px;
+font-size: 40px;
+margin-left: 400px;
+margin-top:100px;
+background-color: antiquewhite;
+color: rgb(41, 34, 34);
+}
+.go{
+    font-size: 60px;
+    color:#000000;
+    margin-left: 500px;
+    display: flex;
+    gap:100px;
+}
+.love{
+        background-repeat: no-repeat;
+    background-size: 100%;
+    height:650px;
+    background-attachment: fixed;
+    background-image:url(poop.jpg);
+}
+.st{
+    position: relative;
+    top: 350px;
+}
+.joke{
+    position: absolute;
+    top: 0px;
+    height: 280px;
+    left: -500px;
+}
+.sam{
+    height:280px ;
+    left: 20px;
+}
+.love h1{
+     font-weight:60px;
+}

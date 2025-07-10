@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Launch your next big idea with our powerful and modern platform." />
+  <meta name="keywords" content="Startup, SaaS, Landing Page, Modern Web Design, SEO Optimized" />
+  <meta name="author" content="Your Company Name" />
+  <title>MrJ</title>
+  <style>
+    :root {
+      --primary-bg: #222831;
+      --secondary-bg: #31363F;
+      --glass-bg: rgba(49, 54, 63, 0.92);
+      --accent: #98CD00;
+      --accent2: #98CD00;
+      --text: #EEEEEE;
+      --muted: #b0b3c6;
+      --shadow: 0 2px 8px 0 rgba(49, 54, 63, 0.18);
+      --radius: 18px;
+      --blur: 6px;
+      --transition: 0.3s cubic-bezier(.4,2,.3,1);
+      --star-gold: #FFE700;
+      --star-empty: #888888;
+      --rate-btn: #98CD00;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #222831 0%, #31363F 100%);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    /* ClickSpark Styles */
+    .click-spark-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .click-spark-canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      user-select: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+    /* Navigation */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: var(--glass-bg);
+      box-shadow: var(--shadow);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(var(--blur));
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--accent);
+      letter-spacing: 2px;
+      text-shadow: 0 2px 8px var(--accent2);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius);
+      transition: background var(--transition), color var(--transition);
+    }
+
+    .nav-links a:hover {
+      background: var(--accent2);
+      color: #fff;
+      box-shadow: 0 2px 12px var(--accent2);
+    }
+
+    /* Dropdown Menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .user-email {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .user-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--glass-bg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: var(--accent2);
+      box-shadow: 0 2px 8px var(--accent2);
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 35px;
+      right: 0;
+      background: var(--glass-bg);
+      min-width: 160px;
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      z-index: 1000;
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(var(--blur));
+      overflow: hidden;
+    }
+
+    .dropdown-content a {
+      color: var(--text);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background var(--transition), color var(--transition);
+    }
+
+    .dropdown-content a:hover {
+      background: var(--accent2);
+      color: #fff;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .user-email {
+      color: #fff;
+    }
+
+    /* Sign Out Button */
+    .sign-out-btn {
+      background: var(--glass-bg);
+      color: var(--accent2);
+      border: 1px solid var(--accent2);
+      padding: 8px 18px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-left: 10px;
+      transition: background var(--transition), color var(--transition), box-shadow var(--transition);
+      box-shadow: 0 2px 8px var(--accent2);
+    }
+
+    .sign-out-btn:hover {
+      background: var(--accent2);
+      color: #fff;
+      box-shadow: 0 4px 16px var(--accent2);
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem 3rem 2rem;
+      color: var(--text);
+      background: linear-gradient(120deg, #23283a 60%, #181c24 100%);
+      border-radius: 0 0 var(--radius) var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      margin-bottom: 1.2rem;
+      color: var(--accent);
+      text-shadow: 0 2px 12px var(--accent2);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2.2rem;
+      color: var(--muted);
+    }
+
+    .btn-primary, .btn-secondary {
+      display: inline-block;
+      padding: 1rem 2.2rem;
+      background: linear-gradient(90deg, var(--accent2), var(--accent));
+      color: #fff;
+      text-decoration: none;
+      border-radius: var(--radius);
+      font-weight: bold;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 20px var(--accent2);
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+      border: none;
+      outline: none;
+    }
+
+    .btn-primary:hover, .btn-secondary:hover {
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 8px 32px var(--accent2);
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+    }
+
+    .btn-secondary {
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+    }
+
+    /* Features Section */
+    .features {
+      padding: 4rem 2rem;
+      background: var(--glass-bg);
+      backdrop-filter: blur(var(--blur));
+      margin: 2rem;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: var(--shadow);
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 2.3rem;
+      margin-bottom: 3rem;
+      color: var(--accent);
+      text-shadow: 0 2px 8px var(--accent2);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .feature-card {
+      background: var(--glass-bg);
+      padding: 2rem 1.2rem;
+      border-radius: var(--radius);
+      text-align: center;
+      backdrop-filter: blur(var(--blur));
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: var(--shadow);
+      transition: transform var(--transition), box-shadow var(--transition);
+      position: relative;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 10px 40px var(--accent2);
+    }
+
+    .feature-card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-shadow: 0 1px 4px var(--accent2);
+      display: block;
+      margin-bottom: 1rem;
+      transition: color var(--transition);
+    }
+
+    .feature-card a:hover {
+      color: var(--accent2);
+    }
+
+    /* Rating System */
+    .rating-section {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .current-rating {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+
+    .stars-display {
+      display: flex;
+      gap: 2px;
+    }
+
+    .star-display {
+      font-size: 1.2rem;
+      color: var(--star-gold);
+      filter: none;
+    }
+
+    .star-display.empty {
+      color: rgba(255, 215, 203, 0.2);
+      filter: none;
+    }
+
+    .rating-form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .stars-input {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 0.5rem;
+    }
+
+    .star-input {
+      font-size: 1.5rem;
+      color: var(--star-empty);
+      cursor: pointer;
+      transition: color var(--transition), transform var(--transition);
+      user-select: none;
+      filter: none;
+    }
+
+    .star-input:hover,
+    .star-input.active {
+      color: var(--star-gold);
+      transform: scale(1.15);
+      filter: none;
+    }
+
+    .email-input {
+      padding: 0.5rem;
+      border: none;
+      border-radius: var(--radius);
+      background: rgba(36, 40, 54, 0.9);
+      color: var(--text);
+      font-size: 0.9rem;
+      width: 200px;
+      text-align: center;
+      outline: none;
+    }
+
+    .email-input::placeholder {
+      color: var(--muted);
+    }
+
+    .submit-rating {
+      padding: 0.5rem 1.5rem;
+      background: var(--rate-btn) !important;
+      color: #222831 !important;
+      border: none;
+      border-radius: var(--radius);
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+      font-size: 0.9rem;
+      box-shadow: 0 4px 20px var(--rate-btn);
+    }
+
+    .submit-rating:hover {
+      background: #b6e85e !important;
+      color: #222831 !important;
+      box-shadow: 0 8px 32px var(--rate-btn);
+    }
+
+    .submit-rating:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .rating-message {
+      font-size: 0.8rem;
+      color: var(--text);
+      margin-top: 0.5rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius);
+      background: var(--glass-bg);
+      box-shadow: 0 2px 8px var(--accent2);
+    }
+
+    .rating-message.success {
+      background: rgba(0,255,208,0.15);
+      color: var(--accent);
+    }
+
+    .rating-message.error {
+      background: rgba(255,107,203,0.15);
+      color: var(--accent2);
+    }
+
+    /* About Section */
+    .about {
+      padding: 4rem 2rem;
+      text-align: center;
+      color: var(--text);
+    }
+
+    .about h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      color: var(--accent2);
+      text-shadow: 0 2px 8px var(--accent2);
+    }
+
+    .about p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+
+    /* CTA Section */
+    .cta {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: var(--glass-bg);
+      backdrop-filter: blur(var(--blur));
+      margin: 2rem;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--text);
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      text-shadow: 0 2px 8px var(--accent2);
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: var(--muted);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      opacity: 0.8;
+      background: transparent;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 900px) {
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .features {
+        padding: 2rem 0.5rem;
+        margin: 1rem 0.5rem;
+      }
+      .cta {
+        padding: 2rem 0.5rem;
+        margin: 1rem 0.5rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0.5rem;
+      }
+      .nav-links {
+        gap: 1rem;
+      }
+      .hero {
+        padding: 2.5rem 0.5rem 1.5rem 0.5rem;
+      }
+      .features {
+        padding: 1.5rem 0.2rem;
+      }
+      .cta {
+        padding: 1.5rem 0.2rem;
+      }
+      .top-rated {
+        padding: 1rem 0.2rem;
+      }
+    }
+    .logo, .top-rated h2, .features h2, .about h2, .cta h2, .dashboard-header h1, .dashboard-card h2, .stat-value, .user-icon {
+      color: var(--accent) !important;
+      text-shadow: none !important;
+    }
+    .feature-card a {
+      color: var(--accent) !important;
+      text-shadow: none !important;
+    }
+    .feature-card a:hover, .dropdown-content a:hover, .nav-links a:hover {
+      background: var(--accent) !important;
+      color: #222831 !important;
+    }
+    .star-display {
+      color: var(--star-gold) !important;
+      filter: none !important;
+      transition: color var(--transition);
+    }
+    .star-display.empty {
+      color: var(--star-empty) !important;
+      filter: none !important;
+    }
+    .star-input {
+      color: var(--star-empty) !important;
+      filter: none !important;
+      transition: color var(--transition), transform var(--transition);
+    }
+    .star-input.active, .star-input:hover {
+      color: var(--star-gold) !important;
+      filter: none !important;
+      transform: scale(1.15);
+    }
+  </style>
+</head>
+<body>
+  <!-- ClickSpark Canvas Container -->
+  <div class="click-spark-container">
+    <canvas class="click-spark-canvas"></canvas>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">MrJ</div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#cta">Contact</a></li>
+        <li class="auth-not-required"><a href="auth.html">Sign In</a></li>
+        <li class="auth-required" style="display: none;">
+          <div class="dropdown">
+            <a href="#" class="user-email">
+              <span class="user-icon">👤</span>
+              <span class="email-text"></span>
+            </a>
+            <div class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="dashboard.html">Dashboard</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Build Your Future Today</h1>
+      <p>Modern solutions to power your skills and drive growth.</p>
+      <a href="#cta" class="btn-primary">Get Started</a>
+    </div>
+  </header>
+  
+  <main>
+    <section id="features" class="features">
+      <h2>Galaxy Education Damauli Student's Showcase</h2>
+      <div class="feature-grid">
+        <div class="feature-card" data-student="aadarsh">
+          <a href="./Aasarsh/Portfolio/signin.html">Aadarsh Kunwar</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="aadarsh"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-student="ronish">
+          <a href="./Ronish/portfolio/portfolio.html">Ronish Parajuli</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="ronish"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-student="bibas">
+          <a href="./bibas/portfolio/portfolio2.html">Bibas Thapa</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="bibas"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-student="roshan">
+          <a href="./Roshan/portfolio/portfolio.html">Roshan Poudel</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="roshan"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-student="manish">
+          <a href="./Manish/portfolio/portfolio.html">Manish Ranabhat</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="manish"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-student="nikesh">
+          <a href="./nikesh/portfolio/form.html">Nikesh Gurung</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="nikesh"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-student="aakriti">
+          <a href="./Aakriti/portfolio/A.html">Aakriti Thakuri</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="aakriti"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-student="anjelin">
+          <a href="./Anjelin/portfolio/portfolio.html">Anjelin Sunar</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="anjelin"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-student="prapti">
+          <a href="./Prapti/portfolio/coding.html">Prapti Thapa</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="prapti"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="feature-card" data-student="divya">
+          <a href="./Divya/portfolio/portfolio.html">Divya Magar</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="divya"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-card" data-student="Sushreena">
+          <a href="./Sushreena/portfolio/portfolio.html">Sushreena Magar</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="Sushreena"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-card" data-student="Success">
+          <a href="./Success/portfilo/portifolio.html">Success Shrestha</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="Success"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-card" data-student="Prayash">
+          <a href="./Prayash/Portfolio/Portfolio.html">Prayash Shrestha</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="Prayash"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-card" data-student="Asbin">
+          <a href="./Asbin//portfolio//james.html">Asbin Thapa</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="Asbin"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-card" data-student="Aayush">
+          <a href="./Aayush K.C/portfolio/ahh.html">Aayush K.C</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="Aayush"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-card" data-student="Sandesh">
+          <a href="./Sandesh Chettri/portfolio/portfolio.html">Sandesh Chettri</a>
+          <div class="rating-section">
+            <div class="current-rating">
+              <div class="stars-display" data-rating="0"></div>
+              <span class="rating-text">(0 ratings)</span>
+            </div>
+            <div class="rating-form">
+              <div class="stars-input" data-student="Sandesh"></div>
+              <button class="submit-rating">Rate</button>
+              <div class="rating-message" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>We're a team of passionate developers, designers, and strategists dedicated to building world-class digital experiences.</p>
+    </section>
+  </main>
+  
+  <section id="cta" class="cta">
+    <h2>Ready to Get Started?</h2>
+    <p>Join hundreds of businesses accelerating with our platform.</p>
+    <a href="auth.html" class="btn-secondary auth-not-required">Sign Up Now</a>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 BrandName. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ratings.js"></script>
+  <script>
+    class ClickSpark {
+      constructor(container, options = {}) {
+        this.container = container;
+        this.canvas = container.querySelector('canvas') || this.createCanvas();
+        this.ctx = this.canvas.getContext('2d');
+        
+        this.options = {
+          sparkColor: '#ffd700',
+          sparkSize: 12,
+          sparkRadius: 20,
+          sparkCount: 10,
+          duration: 500,
+          easing: 'ease-out',
+          extraScale: 1.2,
+          ...options
+        };
+
+        this.sparks = [];
+        this.animationId = null;
+        this.resizeTimeout = null;
+
+        this.init();
+      }
+
+      createCanvas() {
+        const canvas = document.createElement('canvas');
+        canvas.className = 'click-spark-canvas';
+        this.container.appendChild(canvas);
+        return canvas;
+      }
+
+      init() {
+        this.setupCanvas();
+        this.setupEventListeners();
+        this.startAnimation();
+      }
+
+      setupCanvas() {
+        const resizeCanvas = () => {
+          this.canvas.width = window.innerWidth;
+          this.canvas.height = window.innerHeight;
+        };
+
+        const handleResize = () => {
+          clearTimeout(this.resizeTimeout);
+          this.resizeTimeout = setTimeout(resizeCanvas, 100);
+        };
+
+        window.addEventListener('resize', handleResize);
+        resizeCanvas();
+      }
+
+      setupEventListeners() {
+        document.addEventListener('click', (e) => {
+          this.handleClick(e);
+        });
+      }
+
+      easeFunc(t) {
+        switch (this.options.easing) {
+          case 'linear':
+            return t;
+          case 'ease-in':
+            return t * t;
+          case 'ease-in-out':
+            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+          default:
+            return t * (2 - t);
+        }
+      }
+
+      handleClick(e) {
+        const x = e.clientX;
+        const y = e.clientY;
+
+        const now = performance.now();
+        const newSparks = Array.from({ length: this.options.sparkCount }, (_, i) => ({
+          x,
+          y,
+          angle: (2 * Math.PI * i) / this.options.sparkCount,
+          startTime: now,
+        }));
+
+        this.sparks.push(...newSparks);
+      }
+
+      draw(timestamp) {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+        this.sparks = this.sparks.filter((spark) => {
+          const elapsed = timestamp - spark.startTime;
+          if (elapsed >= this.options.duration) {
+            return false;
+          }
+
+          const progress = elapsed / this.options.duration;
+          const eased = this.easeFunc(progress);
+
+          const distance = eased * this.options.sparkRadius * this.options.extraScale;
+          const lineLength = this.options.sparkSize * (1 - eased);
+          const opacity = 1 - eased;
+
+          const x1 = spark.x + distance * Math.cos(spark.angle);
+          const y1 = spark.y + distance * Math.sin(spark.angle);
+          const x2 = spark.x + (distance + lineLength) * Math.cos(spark.angle);
+          const y2 = spark.y + (distance + lineLength) * Math.sin(spark.angle);
+
+          this.ctx.globalAlpha = opacity;
+          this.ctx.strokeStyle = this.options.sparkColor;
+          this.ctx.lineWidth = 3;
+          this.ctx.lineCap = 'round';
+          this.ctx.beginPath();
+          this.ctx.moveTo(x1, y1);
+          this.ctx.lineTo(x2, y2);
+          this.ctx.stroke();
+
+          return true;
+        });
+
+        this.ctx.globalAlpha = 1;
+        this.animationId = requestAnimationFrame((ts) => this.draw(ts));
+      }
+
+      startAnimation() {
+        this.animationId = requestAnimationFrame((ts) => this.draw(ts));
+      }
+
+      updateOptions(newOptions) {
+        this.options = { ...this.options, ...newOptions };
+      }
+
+      destroy() {
+        if (this.animationId) {
+          cancelAnimationFrame(this.animationId);
+        }
+        clearTimeout(this.resizeTimeout);
+      }
+    }
+
+    // Initialize ClickSpark effect
+    const sparkContainer = document.querySelector('.click-spark-container');
+    const clickSpark = new ClickSpark(sparkContainer, {
+      sparkColor: '#ffd700',  // Golden sparks
+      sparkSize: 15,          // Larger sparks
+      sparkRadius: 25,        // Wider spread
+      sparkCount: 12,         // More sparks
+      duration: 600,          // Longer animation
+      extraScale: 1.3         // Extra scale for dramatic effect
+    });
+
+    // Add smooth scroll behavior for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Check authentication status on page load
+    document.addEventListener('DOMContentLoaded', async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session) {
+        // Update UI for logged in user
+        document.querySelectorAll('.auth-required').forEach(el => el.style.display = 'block');
+        document.querySelectorAll('.auth-not-required').forEach(el => el.style.display = 'none');
+        document.querySelector('.email-text').textContent = session.user.email;
+      }
+
+      // Add sign out functionality
+      const signOutBtn = document.getElementById('signOutBtn');
+      if (signOutBtn) {
+        signOutBtn.addEventListener('click', async () => {
+          try {
+            const { error } = await supabase.auth.signOut();
+            if (error) throw error;
+            
+            // Clear any stored data
+            localStorage.removeItem('supabase.auth.token');
+            
+            // Update UI
+            document.querySelectorAll('.auth-required').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.auth-not-required').forEach(el => el.style.display = 'block');
+            
+            // Redirect to home page
+            window.location.href = 'index.html';
+          } catch (error) {
+            console.error('Error signing out:', error.message);
+          }
+        });
+      }
+    });
+
+    // Listen for auth state changes
+    supabase.auth.onAuthStateChange((event, session) => {
+      if (event === 'SIGNED_OUT') {
+        window.location.href = 'index.html';
+      }
+    });
+  </script>
+</body>
+</html>

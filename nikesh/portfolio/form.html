@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>
+form
+</title>
+<link rel="stylesheet" href="sign.css">
+</head>
+<body>
+<div id="nose">
+<form>
+<div class="name1 name">
+<label> Username</label><br>
+<input type="text" name="Username" placeholder="Enter your Username" required>
+</div>
+
+<div class="name2 name">
+<label> Email</label><br>
+<input type="email" placeholder="enter your email" required><br>
+</div>
+
+<div class="name3 name">
+<label>Date of birth </label><br>
+<input type="date" placeholder="enter your Date of birth" required><br>
+</div>
+
+<div class="name4 name">
+<label> Phone number </label><br>
+<input type="tel" placeholder="Enter your number" pattern="^(98|97)\d{8}$" required ><br>
+</div>
+
+<div class="name5 name">
+  <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">Please select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+      <option value="prefer_not_to_say">Prefer not to say</option>
+    </select>
+</div>
+ <div class="name6 name">
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+      </div>
+       <div class="name7 name">
+        <label for="confirm-password">Confirm Password</label><br>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required><br>
+      </div>
+      <div id="error-message">Passwords do not match!</div>
+<div>
+<p class="p">Already have an account?<a href="a.html"><span style="color:blue;">Login</span></a></p>
+</div>
+<button type="submit">Create Account</button><br>
+<input type="checkbox" class="ch" required>
+<label>Agree to our <a href="hi(empty).html"><span style="color: blue; cursor: pointer;"> Terms of Service and Privacy Policy</span></a></label> 
+</form>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Select the actual <form> element
+    const form = document.querySelector("#nose form");
+    const errorMessage = document.getElementById("error-message");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Always prevent form submission
+
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirm-password").value;
+
+      if (password !== confirmPassword) {
+        errorMessage.style.display = "block";
+      } else {
+        errorMessage.style.display = "none";
+        window.location.href = "signIn.html";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

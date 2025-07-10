@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background:linear-gradient(360deg,rgba(0,0,0,.1),rgba(0,0,0,1)),url("can't.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px 30px;
+}
+
+.nav{
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    font-weight: 20px;
+    display: flex;
+    align-items:center;
+    justify-content:end;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+
+}
+
+.nav a{
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:20px;
+    font-size: medium;
+}
+
+.logo i{
+    color:rgb(128, 219, 103) ;
+}
+
+.logo{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 20px;
+    margin-right: auto;
+    width: 200px;
+}
+
+.nav ul{
+   justify-content: flex-end;
+   width: 80%;
+   height: 60px;
+   display: flex;
+   gap: 30px;
+   color: white;
+   list-style-type:none;
+   align-items: center;
+   margin-left: auto;
+   
+}   
+
+.ol{
+    width: 150px;
+    text-align: center;
+    color:aliceblue;
+    height: 35px;
+    margin-left: 25px;
+    padding-top:15px;
+    border: 3px solid rgb(128, 219, 103);
+    border-radius: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ol:hover{
+    background-color: rgb(128, 219, 103);
+    color: black;
+}
+
+.word{
+    text-align: center;
+    width: 400px;
+}
+
+.ani{
+box-sizing: content-box;
+    width: 400px;
+    animation-name: eyy;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease;
+    overflow: hidden;
+}
+@keyframes eyy {
+    0%{
+        width: 400px;
+    }
+    10%{
+        width: 320px;
+    }
+    20%{
+        width: 240px;
+    }
+    30%{
+        width: 160px;
+    }
+    40%{
+        width: 80px;
+    }
+    50%{
+        width:0px;
+    }
+    60%{
+        width: 80px;
+    }
+    70%{
+        width: 160px;
+    }
+    80%{
+        width: 240px;
+    }
+    90%{
+        width: 320px;
+    }
+    100%{
+        width: 400px;
+    }
+}
+
+.sign{
+    background-color: rgb(128, 219, 103);
+    height: 50px;
+    width: 150px;
+    border-color: rgb(128, 219, 103);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.image{
+    height: 20px;
+    width: 20px;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+}
+@keyframes hey {
+    0%{}
+    50%{
+        margin-left: 400px;
+        display: flex;
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+}
+
+.photo{
+    margin-top: 500px;
+    height: 20px;
+    width: 20px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes guys {
+    0%{}
+    50%{
+        margin-left: 400px;
+        display: flex;
+        padding-left: 10px;
+        margin-bottom: 100px;
+    }
+}
+
+.picture{
+    margin-top: 500px;
+    height: 20px;
+    width: 20px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes how {
+    0%{}
+    50%{
+        margin-left: 400px;
+        display: flex;
+        padding-left: 10px;
+        margin-bottom: 100px;
+    }
+}
+
+.gallery{
+    margin-top: 500px;
+    height: 20px;
+    width: 20px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes are {
+    0%{}
+    50%{
+        margin-left: 400px;
+        display: flex;
+        padding-left: 10px;
+        margin-bottom: 100px;
+    } 
+}
+
+.album{
+    margin-top: 500px;
+    height: 20px;
+    width: 20px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes hi {
+    0%{}
+    50%{
+        margin-left: 400px;
+        display: flex;
+        padding-left: 10px;
+        margin-bottom: 100px;
+    } 
+}
+
+.cena{
+    margin-top: 500px;
+    height: 20px;
+    width: 20px;
+    animation-duration: 3s; 
+    animation-iteration-count:infinite;
+
+}
+@keyframes why {
+    0%{}
+    50%{
+        margin-left: 400px;
+        display: flex;
+        padding-left: 10px;
+        margin-left: 100px;
+    }
+}
+
+.img-cont{
+    margin-left: auto;
+    box-sizing: content-box;
+    width: 250px;
+    height: 200px;
+    padding: 15px;
+    overflow: hidden;
+    
+}
+
+.img-cont img{
+    animation-name: asbin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes asbin {
+    25%{
+        transform: translateY(-250px);
+    }
+    35%{
+        transform: translateY(-530px);
+    }
+    45%{
+        transform: translateY(-700px);
+    }
+    55%{
+        transition: translateY(-1050px);
+    }
+    65%{
+        transform: translateY(-1330px);
+    }
+    75%{
+        transform: translateY(-1510px);
+    }
+    85%{
+        transform: translateY(-1820px);
+    }
+    95%{
+        transform: translateY(-2200px);
+    }
+    100%{
+        transition: translateY(-2400px);
+    }
+}
+
+.card-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:50px;
+}
+
+.card1{
+    width: 100%;
+    height: 300px;
+    background-color:rgb(230, 21, 21);
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.card2{
+    width: 100%;
+    height: 300px;
+    background-color:rgb(240, 141, 11);
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 50px;
+}
+.card3{
+    width: 100%;
+    height: 300px;
+    background-color:rgb(19, 224, 19);
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+}
+.card4{
+    width: 100%;
+    height: 300px;
+    background-color:rgb(200, 17, 224);
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+
+
+
+.icon{
+    margin-top: 20px;
+    margin: 25px;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    margin-top:50px;
+    font-style: oblique;
+    margin: 10px;
+}
+
+.para{
+    margin-top: 40px;
+}
+
+.span{
+display: flex;
+justify-content: center;
+}
+
+.span-text{
+    margin-left: auto;
+    width: 50%;
+}
+
+.span-image{
+    width: 50%;
+}

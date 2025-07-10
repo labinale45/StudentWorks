@@ -1,0 +1,99 @@
+<html>
+<head>
+
+  <title>Marvel Comics Portfolio</title>
+  <link href="portfolio.css" rel="stylesheet">
+  <link href="protocss.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="/">
+        <i class="fas fa-user-circle"></i> Marvel Comics</a>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#signup">Sign Up</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Welcome to Marvel Comics</h1>
+      <p>Explore the universe of epic heroes and captivating stories.</p>
+    </section>
+
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Enter name without space..." />
+      <button onclick="searchPage()">Search</button>
+    </div>
+
+    <section id="content">
+      <h2>Featured Comics</h2>
+      <div class="comic-list">
+        <article>
+          <img src="spiderman.jpg" alt="Spider-Man">
+          <h3>Spider-Man</h3>
+          <p>Join Peter Parker as he navigates life and crime-fighting in New York City.</p>
+        </article>
+        <article>
+          <img src="ironman.jpg" alt="Iron Man">
+          <h3>Iron Man</h3>
+          <p>Follow Tony Stark's journey from genius inventor to armored superhero.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Marvel Comics</h2>
+      <p>Marvel Comics is home to some of the most iconic superheroes, each with their unique stories and adventures. If you want to learn more, you can explore everything on this website. Thank you!</p>
+    </section>
+
+    <section id="signup">
+      <h2>Sign Up</h2>
+      <form>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+    <section id="login">
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Marvel Comics Portfolio</p>
+  </footer>
+
+  <script>
+    function searchPage() {
+      var input = document.getElementById('searchInput').value.trim();
+      if (input) {
+        var url = input.toLowerCase() + '.html';
+        window.location.href = url;
+      } else {
+        alert('Please enter a name.');
+      }
+    }
+  </script>
+
+</body>
+</html>

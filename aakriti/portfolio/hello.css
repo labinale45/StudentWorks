@@ -1,0 +1,43 @@
+.c{
+    display: flex;
+    font-size: larger;
+    font-family: cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right:10px;
+    margin-left: 10px;
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom:20px;
+    padding-top:20px;
+}
+.but{
+    background-color: rgb(61, 181, 202);
+    color: black;
+    padding:6px 14px;
+    border:solid 3px;
+    border-color: tomato;
+    border-radius:10px;
+    cursor:pointer;
+    animation-name:luxury;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    padding:10px;
+    gap:20px;
+}
+@keyframes luxury{
+      0%{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    50%{
+        height:30px;
+    }
+}
+.e{
+grid-template-columns: 90px;
+grid-column: 100px;
+grid-row:initial;
+display: flex;
+gap:30px;
+}

@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.cointainer{
+    background-color: antiquewhite;
+}
+nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+.ol{
+    display: flex;
+    justify-content: end;
+    gap:30px;
+    list-style-type: none;
+    align-items: center;
+}
+i{
+    margin-right: 10px;
+}
+i,li:hover{
+    color:white
+}
+.logo{
+    margin-right: auto;
+}
+nav h1{
+    margin-right: auto;
+    color: aliceblue;
+    font-size: 48px;
+    align-items: center;
+    font-family: "Sofia", sans-serif;
+    font-weight: 400;
+    line-height: 25.6px;
+  
+}
+ol{
+    display:flex;
+    gap:25px;
+    list-style-type: none;
+    justify-content: end;
+    color: aliceblue;
+    font-size: 24;
+
+}
+ol li{
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px;
+}
+ul{
+    justify-content: center;
+    margin-right: 30px;
+
+    }
+    .i{
+        gap: 10px;
+        margin-left: 80px;
+        display: flex;
+    }
+    .social-media{
+    gap: 40px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+   
+    color:aliceblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.ul{
+ 
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+.come-to-nepal{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    font-size: 24px;
+}
+.visit-nepal-2025{
+     background: linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,0)),url("lama.jpg");
+    padding:20px 150px;
+     background-repeat: no-repeat;
+    background-size:cover;
+}
+.city{
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+     justify-items: center;
+     margin-top: 20px;
+}
+
+.city li{
+    list-style-type: none;
+   
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.text{
+    margin-top: 100px;
+    width: 50%;
+    background:linear-gradient(180deg,rgba(0,0,0,.7),rgba(0,0,0,.1));
+    background-repeat: no-repeat;
+    padding: 15px;
+    text-align: center;
+   
+}
+.mnt{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+}
+.About-us{
+    margin: 150px 0px;
+    font-size: 28px;
+    font-weight: 41px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fa-facebook:hover {
+  color: rgb(3, 7, 255);
+}
+.fa-tiktok:hover {
+  color: rgba(1, 3, 115, 0.641);
+}
+.fa-instagram:hover {
+  color: rgb(251, 0, 255);
+}
+.fa-youtube:hover {
+  color: rgb(255, 0, 0);
+}
+#ktm:hover {
+color: rgb(0, 234, 255);
+}
+#pokh:hover {
+color: rgb(255, 234, 0);
+}
+#ilam:hover {
+color: rgb(51, 0, 254);
+}
+#jhapa:hover {
+color: rgb(144, 0, 255);
+}
+#must:hover {
+color: rgb(0, 255, 115);
+}
+.come-to-nepal:hover {
+  background:linear-gradient(180deg,rgba(155, 0, 0, 0.4),rgba(255, 255, 255, 0.1));
+}
+#yoyo:hover {
+  background-color: rgb(0, 106, 255);
+}
+#yeah:hover {
+  background-color: rgb(0, 106, 255);
+}
+h1:hover {
+  color: rgb(0, 106, 255);
+}
+.box-style{
+    padding: 20px;
+    height: 100%;
+    width:60%;
+    font-size: 34px;  
+    border: 2px solid white;
+}
+.box-style:hover{
+    transform: translateY(-10px);
+}
+.box{
+    background: linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,.1)),url("7500797642_6a2103e12d_b.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+.About-Kathmandu{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+     margin-bottom: 20px;
+}
+.About-Kathmandu p{
+    display:flex;
+    flex-direction: column;
+}
+.About-Kathmandu .social{
+margin-left: auto;
+}
+.box2{
+    background: linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,.1)),url("Pokhara.jpg");
+     background-repeat:no-repeat;
+    background-size: cover;
+  
+}
+.box3{
+    background: linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,.14)),url("old\ Ilam.jpg");
+     background-repeat:no-repeat;
+    background-size: cover;
+}
+  .box4{
+    background: linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,.14)),url(Upper\ mustang.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+ .box5{
+    background: linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,.14)),url(Jhapa.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.card-cont{
+width: 100%;
+display: grid;
+grid-gap:100px;
+grid-template-columns: 1fr 1fr 1fr;
+justify-content:center;
+align-items: center;
+padding: 50px;
+
+
+}
+.About-Mustang p{
+    display:flex;
+    flex-direction: column;
+}
+.About-Ilam p{
+    display:flex;
+    flex-direction: column;
+}
+.About-Jhapa p{
+    display:flex;
+    flex-direction: column;
+}
+.About-Mustang .social{
+margin-left: auto;
+}
+.About-Ilam .social{
+margin-left: auto;
+}
+.About-Jhapa .social{
+margin-left: auto;
+}
+.bg-cont{
+   background: linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,.40)),url(Black\ and\ white\ mountain.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-repeat:no-repeat;
+      background-size: cover;
+}
+.social{
+    display: flex;
+    justify-content: end;
+}
+.Thanks-For-Visiting{
+     background: linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,.40));
+height: 100%;
+display: flex;
+font-size: 30px;
+display: flex;
+align-items: center;
+padding-right: 20px;
+}
+.box6{
+    background: linear-gradient(180deg,rgba(0,0,0,2),rgba(0,0,0,.14)),url();
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.card-cont2{
+width: 100%;
+height: 500px;
+display: grid;
+grid-gap:100px;
+grid-template-columns: 1fr 1fr 1fr;
+justify-content:center;
+align-items: center;
+padding: 50px;
+}
+.bg-cont2{
+   background: linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,.40)),url(purano-ktm.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-repeat:no-repeat;
+      background-size:cover;
+      width: 100%;
+      height: auto;
+}
+.Thanks-For-visit-nepal-2025{
+     background: linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,0));
+    padding:20px 150px;
+     background-repeat: no-repeat;
+    background-size:cover;
+    width: 1200px;
+}
+
+.visit-soon:hover{
+    border: 2px solid rgb(0, 125, 163);
+    background-color: rgb(0, 153, 115);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+    

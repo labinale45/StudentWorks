@@ -1,0 +1,106 @@
+*{
+    margin:0;
+
+}
+
+nav{
+   position: fixed;
+   z-index: 1;
+   width:90%;
+   height: 50px;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 3px 20px;
+    margin: 20px 40px;
+
+}
+
+
+
+.logo{
+margin-right: auto;
+}
+
+.search{
+    margin-left: auto;
+}
+
+nav ul{
+display: flex;
+list-style-type: none;
+gap:40px;
+font-size: 12px;
+}
+ .logo{
+    margin-right: auto;
+ }
+ .search{
+    margin-left: auto;
+ }
+ .main-box{
+   padding: 50px;
+   width: 100%;
+   height: 100vh;
+   background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0.5)),url("GI5yxYPWAAE980d.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+ }
+ .content{
+   
+    width: 50%;
+    margin-left: 50px;
+ }
+ .replay{
+   display: none;
+   position: absolute;
+   top: 0;
+   padding: 80px;
+    width:100%;
+    height: 100vh;
+    background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0.5)),url(4k-marvel-digital-cartoon-t9z4pnuivn6488jq.jpg);
+    background-repeat: no-repeat;
+
+ }
+
+ .class{
+    width: 100%;
+    top: 0;
+    padding: 80px;
+    position:absolute;
+    height:100vh;
+    display:block;
+    background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0.5)),url(322.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+ }
+ .sign{
+   width: 50px;
+   height:80px;
+   background:transparent;
+   border:1px solid transparent;
+   z-index: 1;
+ }
+ .sign i{
+   width:5px;
+   height:5px;
+ }
+ .sign:hover{
+   color: white;  
+   cursor: pointer;
+ }
+ .signr{
+   position: absolute;
+   right: 30;
+   rotate: 180deg;
+ }
+.signl{
+   position: absolute;
+}
+

@@ -1,0 +1,155 @@
+/* General reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background setup */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #b91d28, #ff7d00); /* Bold red and orange Iron Man colors */
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    color: #ffcc00;
+    font-size: 1.5em;
+}
+
+.header .logo {
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero-section {
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.hero-img {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+/* Sections */
+.section {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Tech Gallery */
+.tech-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tech-gallery img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* History List */
+.history-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.history-list li {
+    margin: 10px 0;
+}
+
+/* Quote styling */
+.quote {
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #ffcc00;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #ffcc00;
+    font-size: 1.2em;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .tech-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-img {
+        width: 90%;
+    }
+}

@@ -1,0 +1,132 @@
+*{
+    scroll-behavior: smooth;
+}
+.sun{
+      display: flex;
+    justify-content: center;
+    width:95%;
+    align-items: center;
+    padding:20px 50px;
+color: rgb(56, 5, 5);
+background-color: rgb(221, 159, 108);
+}
+.sun ul{
+       display: flex;
+    gap: 30px;
+    margin-left: auto;
+    list-style-type: none;
+}
+.moon{
+       gap: 40px;
+    margin-left: auto;
+   display: flex;
+}
+.earth{
+    color: coral;
+    font-size: larger;
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+}
+.rain{
+    width:100%;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: darkred;
+}
+.btn{
+     width:100px;
+    height:30px;
+    border:2px dotted black;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-radius:20px;
+    padding: 5px;
+}
+.btn:hover{
+    background-color: black;
+    color: antiquewhite;
+}
+.star{
+   width:100%;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    color: darkred;
+}
+.but{
+      width:100px;
+    height:30px;
+    border:2px dotted black;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-radius:20px;
+    padding: 5px;
+}
+.but:hover{
+    background-color: black;
+    color: antiquewhite;
+}
+.ice{
+     width:100%;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    color: darkred;
+}
+.btu{
+         width:100px;
+    height:30px;
+    border:2px dotted black;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-radius:20px;
+    padding: 5px;
+}
+.btu:hover{
+    background-color: black;
+color: antiquewhite;
+}
+.water{
+     width:100%;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    color: darkred;
+}
+.bnt{
+         width:100px;
+    height:30px;
+    border:2px dotted black;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-radius:20px;
+    padding: 5px;
+}
+.bnt:hover{
+    background-color: black;
+    color: antiquewhite;
+}
+.wow{
+    display: flex;
+   justify-content: end;
+    color: firebrick;
+
+}
